@@ -2,27 +2,9 @@ package bootcamp;
 
 import java.time.LocalDate;
 
-public class Mentorship {
+public class Mentorship extends Course {
     
-    String title;
-    String description;
     LocalDate date;
-
-    public void setTitle(String title){
-        this.title = title;
-    }
-
-    public String getTitle(){
-        return this.title;
-    }
-
-    public void setDescription(String description){
-        this.description = description;
-    }
-
-    public String getDescription(){
-        return this.description;
-    }
 
     public void setDate(LocalDate date){
         this.date = date;
@@ -30,6 +12,11 @@ public class Mentorship {
 
     public LocalDate getDate(){
         return this.date;
+    }
+
+    @Override
+    public double calculateXP(){
+        return 0;
     }
 
     @Override
